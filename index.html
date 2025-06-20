@@ -55,6 +55,39 @@
             margin: 0 auto;
         }
 
+        .header-buttons {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 28px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1.1em;
+            transition: all 0.3s ease;
+            background-color: var(--primary-color);
+            color: white;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+        }
+
+        .btn.btn-secondary {
+            background-color: var(--card-bg-color);
+            color: var(--primary-color);
+            border: 2px solid var(--primary-color);
+        }
+
+
         .section {
             margin-bottom: 80px;
             opacity: 0;
@@ -182,6 +215,10 @@
         <header class="section">
             <h1>자가진단 분석 자동화 웹앱</h1>
             <p>교원 자가진단 결과를 분석하고, 데이터 기반의 맞춤형 연수 계획 수립을 지원하여 컨설팅의 효율성과 전문성을 극대화하는 솔루션입니다.</p>
+            <div class="header-buttons">
+                <a href="https://script.google.com/macros/s/AKfycbwdtl-iYg8jl0h-5NjtBKrHJl_1rIG7f6Oyo2hwEXvJ7Q0frML7Ry6N_ClxSTpdGDqs/exec" class="btn" target="_blank">자동화 웹앱 체험하기</a>
+                <a href="https://docs.google.com/spreadsheets/d/1BE16JNAUHbq3CbP8M2dHgfxoBZNoCGH51dL8Ic849uI/edit?usp=sharing" class="btn btn-secondary" target="_blank">자동화 구글 시트 확인하기</a>
+            </div>
         </header>
 
         <section class="section">
